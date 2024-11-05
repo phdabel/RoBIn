@@ -1,7 +1,20 @@
-# RoBIn: a tool for inferring the risk of bias and extracting the supporting sentences from the source papers.
+# RoBIn: A Transformer-based Model for Risk of Bias Inference with Machine Reading Comprehension
 
-## Introduction
 RoBIn - Risk of Bias Inference.
+
+Cite this work as:
+
+```bibtex
+@misc{Dias+2024,
+      title={RoBIn: A Transformer-Based Model For Risk Of Bias Inference With Machine Reading Comprehension}, 
+      author={Abel Corrêa Dias and Viviane Pereira Moreira and João Luiz Dihl Comba},
+      year={2024},
+      eprint={2410.21495},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.21495}, 
+}
+```
 
 ## Data
 
