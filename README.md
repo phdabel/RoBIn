@@ -41,9 +41,9 @@ python binary-svm-training.py
 
 Results will be saved in the `save` directory.
 
-### $RoBIn_{Ext}$
+### $RoBIn^{Ext}$
 
-To run $RoBIn_{Ext}$ model, you need to run the following command:
+To run $RoBIn^{Ext}$ model, you need to run the following command:
 ```bash
 python .\robin-training.py --model_name allenai/biomed_roberta_base --max_seq_length 512 --learning_rate 4e-5 --batch_size 16 --epochs 10 gradient_accumulation_steps 4 --l1_regularization 0.1
 ```
@@ -51,9 +51,9 @@ python .\robin-training.py --model_name allenai/biomed_roberta_base --max_seq_le
 The model and results are saved in the `save` directory.
 Check the `robin-training.py` file for more details on the arguments.
 
-### $RoBIn_{Gen}$
+### $RoBIn^{Gen}$
 
-To run $RoBIn_{Gen}$ model, you need to run the following command:
+To run $RoBIn^{Gen}$ model, you need to run the following command:
 ```bash
 python genrobin_training.py --model_name "GanjinZero/biobart-base" --batch_size 4 --learning_rate 3e-5 --epochs 10 --max_seq_length 512 --data_folder data --dataset_name robqa --warmup_steps 0 --l1_regularization 0.1 --gradient_accumulation_steps 4
 ```
