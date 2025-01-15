@@ -2,7 +2,7 @@
 
 RoBIn - Risk of Bias Inference.
 
-Cite this work as:
+This work is under review at the Journal of Biomedical Informatics. A preliminary version is available as:
 
 ```bibtex
 @misc{Dias+2024,
