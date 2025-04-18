@@ -2,17 +2,19 @@
 
 RoBIn - Risk of Bias Inference.
 
-This work is under review at the Journal of Biomedical Informatics. A preliminary version is available as:
+This work is published at the Journal of Biomedical Informatics. Cite this work as follows:
 
 ```bibtex
-@misc{Dias+2024,
-      title={RoBIn: A Transformer-Based Model For Risk Of Bias Inference With Machine Reading Comprehension}, 
-      author={Abel Corrêa Dias and Viviane Pereira Moreira and João Luiz Dihl Comba},
-      year={2024},
-      eprint={2410.21495},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2410.21495}, 
+@article{DIAS2025104819,
+title = {RoBIn: A Transformer-based model for risk of bias inference with machine reading comprehension},
+journal = {Journal of Biomedical Informatics},
+volume = {166},
+pages = {104819},
+year = {2025},
+issn = {1532-0464},
+doi = {https://doi.org/10.1016/j.jbi.2025.104819},
+url = {https://www.sciencedirect.com/science/article/pii/S1532046425000486},
+author = {Abel Corrêa Dias and Viviane Pereira Moreira and João Luiz Dihl Comba}
 }
 ```
 
