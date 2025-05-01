@@ -59,3 +59,54 @@ To run $RoBIn^{Gen}$ model, you need to run the following command:
 ```bash
 python genrobin_training.py --model_name "GanjinZero/biobart-base" --batch_size 4 --learning_rate 3e-5 --epochs 10 --max_seq_length 512 --data_folder data --dataset_name robqa --warmup_steps 0 --l1_regularization 0.1 --gradient_accumulation_steps 4
 ```
+
+## Architecture
+
+### $RoBIn^{Ext}$ (QA + Classification)
+
+- **Backbone**: `AutoModelForQuestionAnswering` (e.g., BioMed RoBERTa).
+- **QA head**: start/end position prediction with cross-entropy loss.
+- **Pooling**: span masking (+ optional softmax attention) → mean-pooling.
+- **Classification head**: LayerNorm → Dropout → (Linear or MLP) → logit → BCE/focal loss.
+- **Joint loss**: QA + classification.
+
+### $RoBIn^{Gen}$ (Generative QA + Classification)
+
+- **Backbone**: `BartForConditionalGeneration`.
+- **Generative head**: seq2seq cross-entropy to produce answer span.
+- **Classification head**: mean-pool decoder hidden states → LayerNorm → Dropout → Linear → sigmoid → BCE.
+- **Joint loss**: generative + classification.
+
+## Folder Structure
+
+```
+├── data/                   # Raw dataset JSON
+├── data_models/            # Dataset wrappers
+├── models/                 # Model & config definitions
+├── pipeline/               # Training/evaluation pipelines
+├── binary-svm-training.py
+├── classifier_training.py
+├── robin-training.py
+├── genrobin_training.py
+├── utils.py                # Checkpoint utils
+├── requirements.txt
+└── README.md
+```
+
+## Dependencies
+
+- PyTorch ≥2.2, Transformers, Datasets, Accelerate, Evaluate  
+- scikit-learn, NLTK, textstat, pandas, matplotlib, seaborn  
+
+Install via:
+```bash
+pip install -r requirements.txt
+```
+
+## Contributing
+
+Contributions welcome! Please open issues or PRs for bugs, features, and docs.
+
+## Contact
+
+For questions or collaboration, contact the authors.
