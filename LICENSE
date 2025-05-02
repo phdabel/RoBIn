@@ -1,0 +1,15 @@
+# RoBIn License (MIT-based with Data Clause)
+
+> Copyright (c) 2025 Abel Corrêa Dias
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+1. Software License (MIT Terms):
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+2. Data Usage Clause:
+Any datasets, corpora, or data files included in this repository (the “Data”) may be used, shared, and modified solely for research and academic purposes, including research publications and non-commercial projects.
+
+Commercial use of the Data is permitted only in accordance with the terms defined in their original source licenses or with explicit written permission from the original data providers, if applicable. Users are responsible for ensuring compliance with any third-party data licenses included in this repository.
